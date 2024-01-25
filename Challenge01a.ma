@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Challenge01a.ma
-//Last modified: Wed, Jan 24, 2024 09:45:21 PM
+//Last modified: Wed, Jan 24, 2024 09:52:48 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "CF4B7B58-4F35-BC9F-FB21-BFBCCA5F0D20";
+fileInfo "UUID" "C2EBBEA1-4867-6DB3-0555-CA84056DB1F7";
 createNode transform -s -n "persp";
 	rename -uid "CBFDDDF6-4DC8-3E83-0D94-3EA16BB67168";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.573136774080842 3.976015529441371 8.7267671379295919 ;
-	setAttr ".r" -type "double3" -14.738352729118033 -299.80000000000774 -1.5999604259378966e-15 ;
+	setAttr ".t" -type "double3" 11.237524618352991 3.5904970689617457 1.5787071693853461 ;
+	setAttr ".r" -type "double3" -12.938352729118199 -265.00000000000506 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F40FEA43-4AED-CFF7-0B4B-BC93655269D9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 12.63878685122712;
+	setAttr ".coi" 12.638786851227529;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3815,9 +3815,6 @@ createNode polyCylinder -n "polyCylinder4";
 	rename -uid "EB41EFF0-408D-9316-349B-FDA33E6C0298";
 	setAttr ".sc" 1;
 	setAttr ".cuv" 3;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "D4E50196-4A2B-49BE-4373-7F97ACA8F99B";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "F294EFF0-4CA7-C567-CB62-93A1035DC8D5";
 	setAttr ".b" -type "string" (
@@ -3865,6 +3862,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "C5C01602-4A2A-E1F1-42E7-F7964A810011";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "2159E575-4281-3AA0-3A08-69A211F40396";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
