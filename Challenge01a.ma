@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Challenge01a.ma
-//Last modified: Fri, Feb 02, 2024 01:00:29 PM
+//Last modified: Fri, Feb 02, 2024 01:14:10 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,19 +11,19 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "313BB19D-448B-574F-C5F3-8F83F1816BF4";
+fileInfo "UUID" "70791461-48DF-3039-4387-078F722BCF16";
 createNode transform -s -n "persp";
 	rename -uid "CBFDDDF6-4DC8-3E83-0D94-3EA16BB67168";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.9588890660825706 2.372742833618843 -2.0613871684631269 ;
-	setAttr ".r" -type "double3" -2.3999999999996473 117.799999999997 0 ;
+	setAttr ".t" -type "double3" 9.1740738885950961 2.6277109432464503 -0.4100078758306826 ;
+	setAttr ".r" -type "double3" -5.3999999999998165 102.19999999999419 0 ;
 	setAttr ".rp" -type "double3" 2.2204460492503131e-16 4.4408920985006262e-16 -8.8817841970012523e-16 ;
 	setAttr ".rpt" -type "double3" -1.0589913501169349e-15 4.1707969732048811e-17 1.3000908713630042e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F40FEA43-4AED-CFF7-0B4B-BC93655269D9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 9.0052541444739376;
+	setAttr ".coi" 7.5071220268342751;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -4221,7 +4221,7 @@ createNode polyExtrudeFace -n "polyExtrudeFace26";
 	setAttr ".cbn" -type "double3" -0.2093844096333099 2.5538919685652246 0.58849679611120376 ;
 	setAttr ".cbx" -type "double3" -0.068287107597643532 2.7042774536948726 0.65884503803748395 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E8C861EA-4EC3-DD51-D1EE-04918C16B910";
+	rename -uid "F19BD241-4D65-4884-050D-52B770730F88";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
