@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Hammer.ma
-//Last modified: Wed, Feb 07, 2024 07:01:35 PM
+//Last modified: Wed, Feb 14, 2024 11:54:54 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "9EEE4F90-479D-704F-FB69-43AF4C4A1410";
+fileInfo "UUID" "8B9679FC-411B-8AD0-2AD4-B990186F1D5C";
 createNode transform -s -n "persp";
 	rename -uid "5B32225A-4EB0-B868-B257-B3AE752BFF56";
 	setAttr ".v" no;
@@ -144,20 +144,20 @@ createNode mesh -n "CapShape" -p "Cap";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".bw" 3;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "65CD7984-42A3-6D9C-3843-AC9343D8C74C";
+	rename -uid "C39F000A-43CD-07E8-21E1-B1AC4530F103";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "4BD9B1A4-4432-AEF0-5FAC-4CB86CFD288B";
+	rename -uid "EE982903-4D2C-B89D-4D4D-14830BCDE06E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "0809A97E-473F-2637-BD47-71AC17E705D0";
+	rename -uid "F22823F1-4A28-4762-45D8-40959DA04C12";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "CF89FDA1-4B91-9D77-72C3-9CA4211806D3";
+	rename -uid "55FE5F83-4902-8947-AA26-9A912F5E6623";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "A58BFAC5-44D0-C65F-89E0-3A8165F804B6";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "11982259-4430-243B-3698-928848949966";
+	rename -uid "F0011914-49C9-5481-EFFA-04B5A4F0DCEB";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B0368671-4366-B913-6994-948C4514A7BA";
 	setAttr ".g" yes;
@@ -842,7 +842,7 @@ createNode polyTweakUV -n "polyTweakUV6";
 		 0 0.025955357 0 0.025955357 0 0.025955357 0 0.025955416 0 0.025955416 0 0.025955357
 		 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "4A2DA323-420E-5BD3-7025-F6A94D4B475F";
+	rename -uid "08A3E2C8-4CD3-BF94-6A87-2F9CA7750A9B";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;

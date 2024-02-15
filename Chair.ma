@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Chair.ma
-//Last modified: Wed, Feb 14, 2024 11:27:08 PM
+//Last modified: Wed, Feb 14, 2024 11:48:37 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "D9A9C5BD-4EED-C65C-E92B-FB919660D263";
+fileInfo "UUID" "670E6083-48EF-559E-571B-3F8C33D28953";
 createNode transform -s -n "persp";
 	rename -uid "B2F1DF26-4FFF-2B73-5B31-8B8845E06E8C";
 	setAttr ".v" no;
@@ -1021,7 +1021,7 @@ createNode polyTweakUV -n "polyTweakUV11";
 		 0.60096133 -0.63266265 0.68848515 -0.56897897 0.69905627 -0.69038939 0.78693622 -0.62951255
 		 0.67895472 -0.13443762 0.75864846 -0.066891499;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "AF07D420-4BC6-629E-7F3C-F8AFDA068A75";
+	rename -uid "A160D9B4-4960-CD99-2455-5A927DB67919";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
